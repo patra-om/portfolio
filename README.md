@@ -1,8 +1,8 @@
-# patra-om.github.io
+# omptra.github.io
 
 My personal portfolio as a 2nd year Robotics & AI student. This site combines modern web aesthetics with a high-tech "cybernetic" theme.
 
-🔗 **Live:** [patra-om.github.io](https://patra-om.github.io)
+🔗 **Live:** [omptra.github.io](https://omptra.github.io)
 
 ## Tech Stack
 
