@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Patra | Developer & Robotics Engineer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fraunces (Serif for Display) and Inter (Sans for Body/Tech) -->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- GSAP for advanced animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js" defer></script>
+    <!-- Vanilla Tilt for 3D card hover effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer></script>
+    <!-- Custom JS -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <!-- Cybernetic Scanner HUD -->
+    <div id="hud-vignette"></div>
+    <div id="hud-overlay" class="hud-active">
+        <div class="hud-scanning-line"></div>
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner top-right"></div>
+        <div class="hud-corner bottom-left"></div>
+        <div class="hud-corner bottom-right"></div>
+        <div class="hud-readout">
+            <div class="readout-text">INITIALIZING...</div>
+            <div class="readout-bar"></div>
+        </div>
+    </div>
+    
+    <!-- Custom Cursor -->
+    <div class="custom-cursor-dot"></div>
+    <div class="custom-cursor-outline"></div>
+    
+    <!-- Background Base -->
+    <div class="bg-base"></div>
+    <div class="bg-glows">
+        <div class="glow-1"></div>
+        <div class="glow-2"></div>
+        <div class="glow-3"></div>
+    </div>
+
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">O<span class="logo-dot">.</span>P</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#credentials">Credentials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content centered">
+                    <p class="hero-subtitle">[ 2nd Year Student ]</p>
+                    <h1 class="hero-title">Om <em>Patra</em><span class="title-dot">.</span></h1>
+                    <p class="hero-desc">
+                        B.E. in Robotics & AI.<br/>
+                        Bridging the gap between hardware and software.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About/Skills Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-num">01</span>
+                    <h2 class="section-title">Background</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="about-lead">
+                            My journey into tech started with a curiosity about how things work, leading me down the path of Robotics and Artificial Intelligence.
+                        </p>
+                        <p>
+                            Whether it's deploying local LLM models, building scalable web servers, or programming microcontroller logic, I enjoy tackling complex problems and building things that live on the internet (and sometimes in the real world).
+                        </p>
+                    </div>
+                    
+                    <div class="skills-wrapper">
+                        <p class="tech-stack-title">// Tech Stack</p>
+                        <ul class="skills-list">
+                            <li><i class="fa-brands fa-python"></i> Python / C++</li>
+                            <li><i class="fa-solid fa-robot"></i> LangChain / Local LLMs</li>
+                            <li><i class="fa-brands fa-docker"></i> Docker / DevOps</li>
+                            <li><i class="fa-solid fa-microchip"></i> Microcontrollers / IoT</li>
+                            <li><i class="fa-brands fa-js"></i> JavaScript / TS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise" class="expertise">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-num">02</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="expertise-grid">
+                    <div class="expertise-category">
+                        <h3 class="category-title"><i class="fa-solid fa-microchip"></i> AI & Data Intelligence</h3>
+                        <div class="skills-chips">
+                            <span class="skill-chip">Deep Learning</span>
+                            <span class="skill-chip">Generative AI</span>
+                            <span class="skill-chip">Large Language Models (LLM)</span>
+                            <span class="skill-chip">TensorFlow</span>
+                            <span class="skill-chip">Scikit-Learn</span>
+                            <span class="skill-chip">Power BI (Data Analytics)</span>
+                        </div>
+                    </div>
+                    <div class="expertise-category">
+                        <h3 class="category-title"><i class="fa-solid fa-server"></i> Cloud & System Infra</h3>
+                        <div class="skills-chips">
+                            <span class="skill-chip">GCP / Microsoft Azure</span>
+                            <span class="skill-chip">Azure DevOps</span>
+                            <span class="skill-chip">Docker</span>
+                            <span class="skill-chip">Network Security</span>
+                        </div>
+                    </div>
+                    <div class="expertise-category">
+                        <h3 class="category-title"><i class="fa-solid fa-gears"></i> Core Engineering</h3>
+                        <div class="skills-chips">
+                            <span class="skill-chip">Python (Programming)</span>
+                            <span class="skill-chip">C / C++</span>
+                            <span class="skill-chip">FastAPI / Flask</span>
+                            <span class="skill-chip">Robotics System Design</span>
+                            <span class="skill-chip">Internet of Things (IoT)</span>
+                            <span class="skill-chip">Git / CI-CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credentials Section -->
+        <section id="credentials" class="credentials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-num">03</span>
+                    <h2 class="section-title">Verified Credentials</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="credentials-grid">
+                    <!-- Credentials 1: Stanford ML -->
+                    <div class="credential-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                        <div class="card-inner">
+                            <div class="credential-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div class="credential-info">
+                                <h3 class="credential-name">Machine Learning</h3>
+                                <p class="credential-provider">Stanford University</p>
+                            </div>
+                            <div class="credential-footer">
+                                <a href="https://www.coursera.org/account/accomplishments/specialization/P9E4NK3UNSMR" target="_blank" class="verify-link">Verified <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="credential-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                        <div class="card-inner">
+                            <div class="credential-icon"><i class="fa-solid fa-ellipsis"></i></div>
+                            <div class="credential-info">
+                                <h3 class="credential-name">Check more certificates here</h3>
+                                <p class="credential-provider">LinkedIn</p>
+                            </div>
+                            <div class="credential-footer">
+                                <a href="https://www.linkedin.com/in/patraom/details/certifications/" target="_blank" class="verify-link">View All <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Credentials 3: Google Cloud Security -->
+                    <div class="credential-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                        <div class="card-inner">
+                            <div class="credential-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="credential-info">
+                                <h3 class="credential-name">Cloud Security Labs</h3>
+                                <p class="credential-provider">Google</p>
+                            </div>
+                            <div class="credential-footer">
+                                <a href="https://www.coursera.org/account/accomplishments/verify/EY3CCWX9GFW3" target="_blank" class="verify-link">Verified <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-box">
+                    <h2 class="contact-title">Let's build<br><em>together.</em></h2>
+                    <p class="contact-text">Currently open for new opportunities in software engineering, robotics, or AI integrations.</p>
+                    
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/patraom" target="_blank" class="social-link">
+                            <i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span> <i class="fa-solid fa-arrow-up-right-from-square small-icon"></i>
+                        </a>
+                        <a href="https://github.com/patra-om" target="_blank" class="social-link">
+                            <i class="fa-brands fa-github"></i> <span>GitHub</span> <i class="fa-solid fa-arrow-up-right-from-square small-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 Om Patra.</p>
+            <p>Designed with <i class="fa-solid fa-code"></i></p>
+        </div>
+    </footer>
+
+</body>
+</html>
